@@ -1,0 +1,5 @@
+C:\Users\Karatui\source\repos\Windows CSC\Windows CSC\bin\Release\Windows CSC.exe
+C:\Users\Karatui\source\repos\Windows CSC\Windows CSC\bin\Release\Windows CSC.pdb
+C:\Users\Karatui\source\repos\Windows CSC\Windows CSC\obj\Release\Windows CSC.csprojAssemblyReference.cache
+C:\Users\Karatui\source\repos\Windows CSC\Windows CSC\obj\Release\Windows CSC.exe
+C:\Users\Karatui\source\repos\Windows CSC\Windows CSC\obj\Release\Windows CSC.pdb
